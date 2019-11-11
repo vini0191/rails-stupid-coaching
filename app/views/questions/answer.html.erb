@@ -1,0 +1,19 @@
+<h1>Stupid Coaching</h1>
+
+<div id="question">
+<h3>
+  Your question is:
+  <p><%= @question %></p>
+</h3>
+</div>
+
+<div id="answer">
+<% if @question %>
+  <h3>
+    Coach's answer is
+    <p><%= @answer %></p>
+  </h3>
+<% end %>
+</div>
+
+<%= link_to "Ask new questions", ask_path %>
